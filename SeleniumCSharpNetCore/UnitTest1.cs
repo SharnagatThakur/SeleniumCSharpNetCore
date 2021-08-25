@@ -28,7 +28,6 @@ namespace SeleniumCSharpNetCore
 
             CustomControl.ComboBox(comboControlName, "Almond");
 
-            Console.WriteLine("Test1");
             Assert.Pass();
         }
     }
