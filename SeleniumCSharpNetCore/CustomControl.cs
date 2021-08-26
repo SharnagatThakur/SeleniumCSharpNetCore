@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 
 namespace SeleniumCSharpNetCore
 {
@@ -14,7 +15,8 @@ namespace SeleniumCSharpNetCore
 
             comboControl.Clear();
             comboControl.SendKeys(value);
-            Driver.FindElement(By.XPath($"//div[@id='{controlName}-dropmenu']//li[text()='{value}']")).Click();
+            Thread.Sleep(3000);
+            Driver.FindElement(By.XPath($"//div[@id='{controlName}-dropmenu']/li[text()='{value}']")).Click();
         }
 
     }
