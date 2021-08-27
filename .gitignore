@@ -3,3 +3,5 @@
 ################################################################################
 
 /.vs
+/SeleniumCSharpNetCore/bin/Debug/netcoreapp3.1
+/SeleniumCSharpNetCore/obj/Debug/netcoreapp3.1
